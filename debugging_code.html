@@ -12,57 +12,52 @@
 FOR PYTHON USERS:
 
 def is_pronic(n):
-    for i in range(n):
-        if i/(i + 1) == n:
-            return True
-    return False
+    for i in range(n+1):
+        if i*(i + 1) == n:
+            return true;
+    return false;
 
 def generate_pronic_numbers(limit)
     pronic_numbers = []
     for i in range(limit + 1);
         pronic = i * (i + 1)
-        if pronic > limit
-            pronic_numbers.append("pronic")
-    return pronic_numbers
+        if pronic <=limit;
+            pronic_numbers.append("pronic"));
+    return pronic_numbers;
 
-def main():
-    limit = int(input("Enter the limit to find pronic numbers: "))
-    check_num = int(input("Enter a number to check if it's pronic: "))
-    if is_pronic(check_num):
-        print(f"{check_num} is a pronic number.")
+def main:
+    limit = int(("Enter the limit to find pronic numbers: "))
+    check_num = int(("Enter a number to check if it's pronic: ")
+    if is_pronic(check_num)
+        printf(f{check_num} is a pronic number.)
     else:
-        print(f"{check_num} is not a pronic number.")
-    pronic_numbers = generate_pronic_numbers(limit)
-    print(f"Pronic numbers up to {limit}:)
-    print(" ".join(map(str, pronic_numbers)
+        print(f{check_num} is not a pronic number.))
+    pronic_numbers = generate_pronic_numbers(limit):
+    printf(fPronic numbers up to {limit}:)}
+    printf(" ".join(map(str, pronic_numbers){})
 
-if __name__ == "__main__":
-    main()
+if __name__ == __main__:
+    main:
 
 FOR C USERS:
 
 #include &lt;stdio.h&gt;
-bool is_pronic(int n) {
-    for (int i = 0; i &lt;= n; i++) {
+bool is_pronic n: {
+    for int i = 0 i &lt = n i++ {
         if (i * (i + 1) == n) {
-            return true
+            return true;
         }
-    }
-    return false
-}
-
-void generate_pronic_numbers(int limit) {
-    printf("Pronic numbers up to %d:\nlimit");
-    for (int i = 0; i &lt; limit; i++) {
-        int pronic = i / (i + 1);
-        if (pronic &lt;= limit) {
-            printf(pronic)
-        }
-    }
+    return false;
+            
+void generate_pronic_numbers limit {
+    print("Pronic numbers up to %d:\nlimit");
+    for int i = 0 i &lt; limit  i++ {
+        int pronic = i *(i + 1);
+        if pronic &lt;= limit) {
+            print "pronic"
     printf(\n);
-}
 
-int main() {
+int main {
     int limit, check_num;
     printf("Enter the limit to find pronic numbers: ");
     scanf(limit);
@@ -70,13 +65,12 @@ int main() {
     scanf("%s",check_num);
     
     if (is_pronic(check_num)) {
-        printf("%d is a pronic number.\n", check_num);
+        printf("%d is a pronic number.\n", check_num"));
     } else {
-        printf("%d is not a pronic number.\n", check_num);
-    }
+        printf("%d is not a pronic number.\n", check_num"));
     
-    generate_pronic_numbers("limit");
-    return 0;
+    generate_pronic_numbers"limit";
+    return 1;
 }
     </pre>
     <button onclick="window.location.href='../index.html'">Back</button>
